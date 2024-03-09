@@ -1,0 +1,30 @@
+{
+  "name": "login-with-google",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-watch": "tsc --watch",
+    "start-server": "npx ts-node ./src/index.ts",
+    "start": "concurrently \"npm run start-watch\" \"npm run start-server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.18",
+    "@types/node": "^20.8.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/passport": "^1.0.13",
+    "@types/passport-google-oauth20": "^2.0.12",
+    "concurrently": "^8.2.1"
+  }
+}
